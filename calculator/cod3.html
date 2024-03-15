@@ -1,0 +1,83 @@
+<html> 
+
+<head> 
+	<title>Calculator</title> 
+
+	<script src="scrcol3.js"></script>
+	<style> 
+
+		table { 
+			border: 4px solid black; 
+			margin-left: auto; 
+			margin-right: auto; 
+		} 
+		
+		input[type="button"] { 
+			width: 53%; 
+			padding: 28px 45px; 
+			background-color: orange; 
+			color: black;
+			font-weight: bold;
+			font-size: 19px; 
+			margin-left:3px;
+		} 
+		
+		
+		input[type="text"] { 
+			padding: 26px 30px; 
+			font-size: 24px; 
+			font-weight: bold; 
+			width:96%;
+			margin-left:5px;
+			margin-right:4px;
+			border: 3px solid black; 
+		} 
+	</style> 
+</head> 
+
+<body> 
+<form>
+		<table> 
+         <tr> 
+            <td colspan="4"> 
+                <input type="text" id ='res'>
+            </td> 
+
+        </tr> 	
+ <tr>  
+  
+  
+  <td><input type="button" value="*"  onclick="domath('*')"></td>  
+  <td><input type="button" value="-"  onclick="domath('-')" ></td>  
+  <td ><input type="button" onclick="result()" value="="></td>  
+    <td><input type="button" value="C"onclick="cl()"></td> 
+
+ </tr>  
+ <tr>  
+  <td><input type="button" value="7" onclick="domath('7')"></td>  
+  <td><input type="button" value="8" onclick="domath('8')"></td>  
+  <td><input type="button" value="9" onclick="domath('9')"></td>  
+ <td><input type="button" onclick="domath('+')" value ="+"></td>  
+ </tr>  
+ <tr>  
+  <td><input type="button" value="4" onclick="domath('4')"></td>  
+  <td><input type="button" value="5" onclick="domath('5')"></td>  
+  <td><input type="button" value="6" onclick="domath('6')"
+  ></td> 
+ <td ><input type="button" value="/" onclick="domath('/')"></td>   
+ </tr>  
+ <tr>  
+  <td><input type="button" value="1" onclick="domath('1')"></td>  
+  <td><input type="button" value="2" onclick="domath('2')"></td>  
+  <td><input type="button" value="3" onclick="domath('3')"></td>  
+  <td><input type="button" value="0" onclick="domath('0')"></td>  
+ 
+ </tr>  
+ 
+ 
+</table>
+	</form>
+</body> 
+
+</html>
+
